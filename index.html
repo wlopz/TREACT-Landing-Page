@@ -283,8 +283,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <div class="price-plan__wrapper">
-                        <div class="price-plan__price-box">
-                            <div class="price-plan__dash-line--personal line--color"></div>
+                        <div class="price-plan__price-box sides--personal">
+                            <!-- <div class="price-plan__dash-line--personal line--color"></div> -->
+                            <!-- <hr class="solid"> -->
                             <div class="price-plan__price--type">
                                 <span class="price-plan__type">PERSONAL</span>
                                 <span class="price-plan__price">$17.99</span>
@@ -318,7 +319,7 @@
                                 <button class="price-plan__btn price-plan__btn--color-business">BUY NOW</button>
                             </div>
                         </div>
-                        <div class="price-plan__price-box">
+                        <div class="price-plan__price-box sides--enterprise">
                             <div class="price-plan__dash-line--enterprise"></div>
                             <div class="price-plan__price--type">
                                 <span class="price-plan__type">ENTERPRISE</span>
@@ -342,39 +343,50 @@
         </section>
         <section id="testimonials">
             <div class="container">
-                <div class="row">
+                <div class="row testimonials__row">
                     <figure class="testimonials__img--wrapper">
-                        <img src="" alt="" class="testimonials__img">
+                        <img src="./assets/love-illustration.svg" alt="" class="testimonials__img">
                     </figure>
                     <div class="testimonials__description">
-                        <span class="text--purple testimonials__span">TESTIMONIALS</span>
-                        <h3 class="testimonials__sub-title">
+                        <span class="testimonials__span text--purple">TESTIMONIALS</span>
+                        <h2 class="testimonials__sub-title">
                             Our Clients <span class="text--purple">Love Us.</span>
-                        </h3>
+                        </h2>
                         <p class="testimonials__para">
-                            Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
                         </p>
                         <!-- TESTIMONIAL SLIDER HERE -->
                          <div class="testimonial__user--rating">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                          </div>
                          <h4 class="testimonial__user--sub-title">Love the Developer Experience and Design Principles!</h4>
                          <p class="testimonial__user--desc">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos pariatur impedit, fugiat qui quisquam modi aspernatur repellendus perferendis incidunt dolores necessitatibus, laudantium totam iste soluta, distinctio consequuntur earum quos accusantium.
+                            Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         </p>
                         <div class="testimonial__user--wrapper">
                             <div class="testimonial__user--pic-name">
-                                <img src="" alt="" class="testimonial__user--pic">
-                                <h5 class="testimonial__user--name">Adam Cuppy</h5>
-                                <p class="testimonial__user--title">Founder, EventsNYC</p>
+                                <img src="./assets/photo_testimonial.avif" alt="" class="testimonial__user--pic">
+                                <div class="testimonial__user--info">
+                                    <h5 class="testimonial__user--name">Adam Cuppy</h5>
+                                    <p class="testimonial__user--title">Founder, EventsNYC</p>
+                                </div>
                             </div>
                             <div class="testimonial__user--arrows">
-                                <i></i>
-                                <i></i>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x" style="color:#E2E8F0;"></i>
+                                    <i class="fa-solid fa-arrow-left fa-stack-1x" style="color:#6316FC;"></i>
+                                </span>
+                                <hr class="icon__solid">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa fa-circle fa-stack-2x" style="color:#E2E8F0;"></i>
+                                    <i class="fa-solid fa-arrow-right fa-stack-1x" style="color:#6316FC;"></i>
+                                </span>
+                                <!-- <i class="fa-solid fa-arrow-left text--purple"></i> -->
+                                <!-- <i class="fa-solid fa-arrow-right text--purple"></i> -->
                             </div>
                         </div>
                     </div>
@@ -383,7 +395,7 @@
         </section>
         <section id="faqs">
             <div class="container">
-                <div class="row">
+                <div class="row faqs__row">
                     <span class="text--purple faqs__span">FAQS</span>
                     <h2 class="faqs__section--title">
                         You have <span class="text--purple">Questions?</span>
@@ -393,50 +405,56 @@
                     </p>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">Are all the templates easily customizable?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">How long do you usually support an standalone template for ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">What kind of payment methods do you accept?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">Is there a subscribption service to get the latest templates?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">Are the templates compatible with the React ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Lorem ipsum dolor sit amet.</h3>
-                            <p class="faq__para">
+                            <h3 class="faq__sub-title">Do you really support Internet Explorer 11 ?</h3>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -444,13 +462,13 @@
         </section>
         <section id="cta">
             <div class="container">
-                <div class="row">
+                <div class="row cta__row">
                     <div class="cta__desc--wrapper">
                         <h3 class="cta__title">Developers all over the world are happily using Treact.</h3>
                     </div>
                     <div class="cta__btn--wrapper">
-                        <button class="btn">Get Started</button>
-                        <button class="btn">Contact Us</button>
+                        <button class="btn--big btn--started">Get Started</button>
+                        <button class="btn--big btn--contact">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -490,23 +508,35 @@
                     </div>
                     <div class="footer__link--legal">
                         <h4 class="footer__title--legal">LEGAL</h4>
-                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">Blog</a>
-                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">FAQs</a>
-                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">Support</a>
-                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">About Us</a>
+                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">GDPR</a>
+                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">Privacy Policy</a>
+                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">Terms of Service</a>
+                        <a href="" class="footer__legal--link link__hover-effect link__hover-effect--white" target="_blank">Disclaimer</a>
                     </div>
                 </div>
+                <hr class="footer__divider">
                 <div class="footer__social--wrapper">
                     <figure class="footer__logo">
-                        <img src="./assets/Library.svg" alt="" class="footer__logo--img">
+                        <img src="./assets/logo-light.svg" alt="" class="footer__logo--img">Treact Inc.
                     </figure>
                     <!-- <span class="footer__logo--popper">Top<i class="fas fa-chevron-up" aria-hidden="true"></i></span> -->
-                    <div class="footer__copyright"> Copyright © <span id="current-year"></span> Library</div>
+                    <div class="footer__copyright"> © <span class="footer__year" id="current-year"></span> Treact Inc. All Rights Reserved.</div>
                     <div class="footer__social-list">
-                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank"><i></i></a>
-                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank"><i></i></a>
-                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank"><i></i></a>
-                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank"><i></i></a>
+                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x" style="color:#E2E8F0;"></i>
+                                <i class="fa-brands fa-facebook-f fa-stack-1x" style="color:#1A202C;"></i>
+                            </span></a>
+                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x" style="color:#E2E8F0;"></i>
+                                <i class="fa-brands fa-twitter fa-stack-1x" style="color:#1A202C;"></i>
+                            </span></a>
+                        <a href="" class="footer__social--link link__hover-effect link__hover-effect--white" target="_blank">
+                            <span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x" style="color:#E2E8F0;"></i>
+                                <i class="fa-brands fa-youtube fa-stack-1x" style="color:#1A202C;"></i>
+                            </span></a>
                     </div>
                 </div>
             </div>
