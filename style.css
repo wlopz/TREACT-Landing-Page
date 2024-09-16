@@ -32,6 +32,7 @@ p {
 a {
     color: #242424;
     text-decoration: none;
+    position: relative;
 }
 
 li {
@@ -64,6 +65,12 @@ li {
     font-size: 14px;
 }
 
+.btn--big:hover,
+.btn--small:hover {
+    background-color: #5011CC;
+    transition: 500ms ease;
+}
+
 .container {
     padding: 80px 0;
     margin: 0 50px;
@@ -88,7 +95,7 @@ NAV BAR
     align-items: center;
     height: 100px;
     width: 93%;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
 }
 
@@ -102,10 +109,19 @@ NAV BAR
     font-size: 14px;
 }
 
-/* .nav__link--wrapper {
-    display: flex;
-    padding: 0 0;
+/* .nav__link:hover {
+    text-decoration: underline;
+    color: #6316FC;
+    transition: all 300ms ease;
 } */
+
+.link__hover-effect--purple:hover {
+    color: #6316FC;
+    border-bottom: 2px solid #6316FC;
+    padding-bottom: 2px;
+    transition-duration: all 500ms ease;
+    position: relative;
+}
 
 .nav__link--login {
     padding-right: 26px;
@@ -142,6 +158,11 @@ NAV BAR
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+}
+
+.nav__link--primary:hover {
+    background-color: #5011CC;
+    transition: 500ms ease;
 }
 
 /* MOBILE MENU */
@@ -292,7 +313,8 @@ header {
 
 .header__customers--img {
     filter: grayscale(1) invert(1);
-    width:400px
+    width:100%;
+    width: 400px;
 }
 
 .header__email--signup {
@@ -418,7 +440,6 @@ FEATURES
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
-    margin-right: 66px;
 }
 
 /* 
@@ -674,6 +695,7 @@ PRICING
 
 .price-plans__section--title {
     color: #243D63;
+    text-align: center;
 }
 
 .price-plans__section--para-wrapper {
@@ -688,7 +710,7 @@ PRICING
     font-size: 18px;
     line-height: 1.625;
     margin-bottom: 24px;
-    width: 615px;
+    width: 100%;
     max-width: 615px;
 }
 
@@ -796,6 +818,20 @@ PRICING
     margin-bottom: 20px;
     color: #7c8ba1;
     color: white;
+}
+
+.price-plan__btn:hover {
+    opacity: 0.85;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+    box-shadow: 1px 10px 10px #E3E3E3;
+}
+
+.price-plan__btn--color-business:hover {
+    opacity: 0.85;
+    transform: scale(1.2);
+    transition: all 500ms ease;
+    box-shadow: 1px 10px 10px #00000061;
 }
 
 .price-plan__btn--color-personal {
@@ -1015,7 +1051,7 @@ FAQs
     text-align: center;
     margin-bottom: 50px;
     color: #7C8BA1;
-    width: 600px;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -1066,6 +1102,15 @@ CTA
 .btn--started {
     background-color: #f56565;
     margin: 0 10px;
+}
+
+.btn--started:hover {
+    background-color: #E53E3E;
+}
+
+.btn--contact:hover {
+    background-color: white;
+    color: #6316FC;
 }
 
 .btn--contact {
@@ -1131,6 +1176,14 @@ footer {
     margin-bottom: 12px;
     font-size: 14px;
     font-weight: 500
+}
+
+.link__hover-effect--white:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    transition-duration: all 500ms ease;
+    position: relative;
 }
 
 .footer__social--wrapper {
@@ -1240,7 +1293,7 @@ footer {
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        max-width: 32rem;
+        max-width: 512px;
         text-align: center;
         padding: 96px 0;
     }
@@ -1302,6 +1355,10 @@ footer {
         display: flex;
     }
 
+    .price-plans__section--para {
+        font-size: 14px;
+    }
+
     .price-plan__wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -1342,8 +1399,22 @@ footer {
     }
 }
 
+@media (max-width: 767px) {
+    .footer__link--wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer__link--main,
+    .footer__link--product,
+    .footer__link--press,
+    .footer__link--team,
+    .footer__link--legal {
+        margin: 5px;
+    }
+}
+
 /* SMART PHONES, TABLETS, LARGE SMARTPHONES */
-@media (max-width: 639px) {
+@media (max-width: 640px) {
     .header__email--signup {
         display: flex;
         flex-direction: column;
@@ -1356,6 +1427,10 @@ footer {
 
     .btn--big {
         width: 90%;
+    }
+
+    .features__container {
+        padding-top: 150px;
     }
 
     .features__section--title {
@@ -1484,7 +1559,7 @@ footer {
     .values__sub-desc--par {
         margin-right: 0px;
         padding-right: 0px;
-        padding: 0 96px;
+        padding: 0;
     }
 
     .price-plans__section--title {
@@ -1533,6 +1608,7 @@ footer {
 
     .faqs__section--title {
         font-size: 36px;
+        text-align: center;
     }
 
     .cta__desc--wrapper {
@@ -1547,6 +1623,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .btn--big {
@@ -1583,6 +1660,17 @@ footer {
 
     .footer__social-list {
         margin-bottom: 32px;
+    }
+
+    @media (max-width: 447px) {
+        .header__customers--img {
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .values__sub-desc--par {
+            padding: 0px;
+        }
     }
 
 }
