@@ -49,19 +49,19 @@
                     </button>
                     <ul class="menu__links">
                         <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                            <a href="#" class="menu__link link__hover-effect--purple" onclick="closeMenu()">About</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+                            <a href="#features" class="menu__link link__hover-effect--purple" onclick="closeMenu()">Blog</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+                            <a href="#" class="menu__link link__hover-effect--purple no-cursor" onclick="closeMenu()">Pricing</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+                            <a href="#" class="menu__link link__hover-effect--purple no-cursor" onclick="closeMenu()">Contact Us</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+                            <a href="#" class="menu__link link__hover-effect--purple no-cursor" onclick="closeMenu()">Login</a>
                         </li>
                         <li class="menu__list">
                             <a class="menu__link nav__link--anchor nav__link--primary" href="#signup" onclick="closeMenu()">Sign Up</a>
@@ -79,8 +79,17 @@
                         Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
                     </p>
                     <div class="header__email--signup">
-                        <input type="email" placeholder="Your E-mail Address" class="header__form--input">
-                        <button class="btn--big">Get Started</button>
+                        <div class="email--border">
+                            <input type="email" placeholder="Your E-mail Address" class="header__form--input">
+                            <button class="btn__email--signup">Get Started</button>
+                        </div>
+                    </div>
+                    <!-- EMAIL SIGN UP MOBILE/TABLET -->
+                    <div class="header__email--signup-mobile">
+                        <div class="email--border-mobile">
+                            <input type="email" placeholder="Your E-mail Address" class="header__form--input-mobile">
+                            <button class="btn__email--signup-mobile">Get Started</button>
+                        </div>
                     </div>
                     <div class="header__customers">
                         <p class="header__customers--para">
@@ -439,7 +448,7 @@
                     </div>
                     <div class="faq__wrapper">
                         <div class="faq__accordion">
-                            <h3 class="faq__sub-title">Is there a subscribption service to get the latest templates?</h3>
+                            <h3 class="faq__sub-title">Is there a subscription service to get the latest templates?</h3>
                             <i class="fa-solid fa-chevron-down"></i>
                             <!-- <p class="faq__para">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt consequuntur totam nobis facilis delectus consequatur exercitationem officia fugit reprehenderit quibusdam.
